@@ -1,0 +1,21 @@
+.card-header {
+    background-color: #CA6702 !important;
+}
+
+#product-card{
+    background-color: #e9d8a6 !important;
+}
+
+#card shadow{
+    background-color: #e9d8a6 !important;
+}
+
+
+#product-thumbnail {
+    background-color: #e9d8a6;
+    
+}
+.card-body {
+    background-color: #e9d8a6;
+    width: max-content 10%;
+}
