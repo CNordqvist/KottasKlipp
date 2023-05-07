@@ -1,0 +1,38 @@
+.card-header {
+    background-color: #CA6702 !important;
+}
+
+#product-card {
+    background-color: #e9d8a6;
+    width: 20%;
+    height: fit-content;
+}
+
+#product-thumbnail{
+    background-color: #0a9396;
+}
+
+.card-body {
+    background-color: #e9d8a6;
+}
+
+.card-description{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+        border-bottom: 2px;
+        border-style: solid;
+        border-color: #b15800 !important;
+
+}
+
+.btg-group{
+padding-top: 10px;
+}
+
+
+#product-card {
+    border-radius: 2%;
+    border-style: solid;
+    border-color: #b15800;
+}
