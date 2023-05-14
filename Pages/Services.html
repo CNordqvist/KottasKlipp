@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,82 +6,48 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <!-- Bootstrap CSS v5.2.1 -->
-  <link rel="stylesheet" href="../Assets/Styles/Services.css">
+<link rel="stylesheet" href="../Assets/Styles/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<!--Scripts-->
-<script src="site.js"></script>
+
+    <script defer src="../assets/scripts/site.js"></script>
 </head>
+
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-              aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" href="./Index.html" aria-current="page">Hem<span class="visually-hidden">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" href="./AboutUs.html" aria-current="page">Om Oss<span class="visually-hidden">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" href="./Services.html" aria-current="page">Klippningar<span class="visually-hidden">(current)</span></a>
-                  </li>
-          </div>
-    </div>
-    </nav>
-    <div
-            id="product-list-container"
-            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
-          >
-    <!-- <template id="products-card"> -->
-      <div class="col" id="product-card">
-      <div class="card shadow-sm" id="card shadow">
-      <div class="card-header">
-<h2 id="product-card-header"> test Klipp</h2>
-      </div>
-      <img
-                    class="img-thumbnail product-image"
-                    id="product-thumbnail"
-                    height="250"
-                    width="250"
-                    src="../Assets/Images/Dye.webp"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <p id="product-description-short" class="card-text">Färga ditt hår!</p>
-                    <!-- <p id="product-card-price"></p> -->
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <div class="btn-group">
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-outline-primary"
-                          id="add-to-cart-button"
-                        >
-                          Add To Cart
-                        </button>
-                      </div>
-                        <small class="fw-bold"
-                        >Price:<small id="product-card-price">5</small
-                      ></small>
-      </div>
-    
-    <!-- </template> -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="nav-base">
+      <div class="container" id="nav-container">
+        <a class="navbar-brand" href="./Index.html">Kottas Klipp</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Index.html" aria-current="page">Hem<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./AboutUs.html" aria-current="page">Om Oss<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Services.html" aria-current="page">Klippningar<span class="visually-hidden">(current)</span></a>
+                </li>
+                <li><a class="btn btn-outline-primary" id="cartbtn" onclick="showCart()">Cart</a></li>
+        </div>
   </div>
+</nav>
+<!--row-cols-2 row-cols-sm-2 row-cols-md-3-->
   </header>
-  <div id="products-container"></div>
-  <script>
-    displayProducts();
-  </script>
-
+  <main>
+    <div id="cart"></div>
+    <div >
+    <ul id="products" class="card-list row  g-2 justify-content-center">
+    </ul>
+  </div>
+  </main>
   <footer>
     <!-- place footer here -->
   </footer>
@@ -89,6 +55,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>

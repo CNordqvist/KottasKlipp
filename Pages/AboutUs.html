@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
+  <link rel="stylesheet" href="../Assets/Styles/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
@@ -15,9 +16,9 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="nav-base">
     <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="./Index.html">Kottas Klipp</a>
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +39,30 @@
 </nav>
   </header>
   <main>
-
+    <div>
+    <h1 class="display-4 text-center" style="font-family: 'Times New Roman', Times, serif;">Om Oss</h1>
+    <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4" >
+      På KottasKlipp hjälper vi dig att omfamna din personliga stil och uttrycka din sanna skönhet.
+       Med vårt erfarna team och en varm atmosfär erbjuder vi en rad hårvårds- och skönhetsbehandlingar för alla åldrar och kön. 
+       Vår strävan är att skapa en trygg plats där du kan koppla av, känna dig förnyad och lämna med ökat självförtroende. 
+       Upptäck konsten att vårda och uttrycka dig själv på KottasKlipp idag.</p>
+    </div>
+    </div>
+  <div class="row">
+    <div class="container col-lg-6 my-4">
+      <h5 class="ContactInfo text-center ">
+        <p>Ytterbyvägen 2, 442 30 Kungälv</p>
+        <p>0303-23 80 00</p>
+      </h5>
+      <div class="map-outer">
+          <div class="gmap_canvas"><iframe width="700" height="700" id="gmap-canvas"
+                  src="https://maps.google.com/maps?q=kung%C3%A4lv&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  scrolling="no" marginheight="0" marginwidth="0">
+          </div>
+      </div>
+  </div>
+  </div>
   </main>
   <footer>
     <!-- place footer here -->
@@ -51,6 +75,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
+<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+  ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"});</script>
 </body>
 
 </html>
