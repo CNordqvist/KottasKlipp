@@ -16,25 +16,25 @@ const products = [
         "Damklippning",
         250.00,
         "är du en dam och vill bli klippt? denna är för dig!",
-        "../assets/Images/Women.webp"
+        "./assets/Images/Women.webp"
     ),
     new Product(
         "Herrklippning",
         200.00,
         "är du en herre och vill bli klippt? denna är för dig!",
-        "../Assets/Images/Men.jpg"
+        "./Assets/Images/Men.jpg"
     ),
     new Product(
         "Barnklippning",
         100.00,
         "är du ett barn och dina föräldrar vill att du ska klippa dig? denna är för dig!",
-        "../Assets/Images/Kids.jpg"
+        "./Assets/Images/Kids.jpg"
     ),
     new Product(
         "Hårfärning",
         150.00,
         "Vill du byta hårfärg? Kom till oss!",
-        "../Assets/Images/Dye.webp"
+        "./Assets/Images/Dye.webp"
     )
 ]
 
